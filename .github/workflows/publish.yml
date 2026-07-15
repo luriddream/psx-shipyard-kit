@@ -1,0 +1,18 @@
+on:
+  push:
+    tags:
+      - '*'
+
+name: Publish
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    env:
+      BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
+      VERSION: ${{ github.ref_name }}
+    steps:
+      - name: Setup butler
+        uses: remarkablegames/setup-butler@v3
+      - name: Upload to itch.io
+        run: butler push . luriddream/psx-shipyard-kit:main --userversion $VERSION --ignore .github/ .gitignore
