@@ -12,6 +12,8 @@ jobs:
       BUTLER_API_KEY: ${{ secrets.BUTLER_API_KEY }}
       VERSION: ${{ github.ref_name }}
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v7
       - name: Setup butler
         uses: remarkablegames/setup-butler@v3
       - name: Upload to itch.io
