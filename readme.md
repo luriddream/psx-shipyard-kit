@@ -12,6 +12,15 @@ and more coming!
 
 ![Shipyard Kit showcase 2](/showcase/showcase-2.png)
 
+
+## Support
+
+Want to support us? Follow us!
+- https://bsky.app/profile/luriddream.com
+- https://luriddream.itch.io/
+- https://luriddream.com/
+
+
 ## License
 
 This Kit is under the [CC0 license](https://creativecommons.org/publicdomain/zero/1.0/).
