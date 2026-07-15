@@ -15,4 +15,4 @@ jobs:
       - name: Setup butler
         uses: remarkablegames/setup-butler@v3
       - name: Upload to itch.io
-        run: butler push . luriddream/psx-shipyard-kit:main --userversion $VERSION --ignore .github/ --ignore .gitignore --ignore showcase/showcase.blend
+        run: butler push . luriddream/retro-psx-style-shipyard-kit:main --userversion $VERSION --ignore .github/ --ignore .gitignore --ignore showcase/showcase.blend
